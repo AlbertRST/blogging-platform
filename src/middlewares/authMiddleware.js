@@ -1,7 +1,6 @@
 import jwt from 'jsonwebtoken' // No vista en clases pero fué la que conversamos en la consulta.
 import { getPostById } from '../models/postModel.js'
 import { getCommentById } from '../models/commentModel.js'
-// import { getUserById } from '../models/userModel.js'
 
 export const verifyToken = (req, res, next) => {
   const token = req.headers.authorization
